@@ -14,8 +14,8 @@ services:
       - WG_HOST=TabbooNAS.myqnapcloud.com #IP ó Nombre DNS
       - WG_PORT=51830 #Puerto WireGuard
     ports:
-      - 51830:51830/udp #Puerto Wireguard
-      - 51831:51831/tcp #Puerto Gestión usuarios - UI
+      - 51830:51820/udp #Puerto Wireguard
+      - 51831:51821/tcp #Puerto Gestión usuarios - UI
     restart: unless-stopped
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
