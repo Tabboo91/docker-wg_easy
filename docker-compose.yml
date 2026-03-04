@@ -2,7 +2,7 @@ version: "3"
 services:
 
   wg-easy:
-    image: ghcr.io/wg-easy/wg-easy:15
+    image: ghcr.io/wg-easy/wg-easy
     container_name: wg-easy
     cap_add:
       - NET_ADMIN
