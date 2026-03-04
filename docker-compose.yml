@@ -12,10 +12,10 @@ services:
       - PASSWORD_HASH=$$2a$$12$$XhnO0qSdF1Xwjs/O7w00qOf9ONEgJ9/hlVUc3wKCOk3bKHuU0d1Ne #Contraseña
       - WG_DEFAULT_DNS=1.1.1.1 #IP DNS
       - WG_HOST=TabbooNAS.myqnapcloud.com #IP ó Nombre DNS
-      - WG_PORT=52820 #Puerto WireGuard
+      - WG_PORT=51820 #Puerto WireGuard
     ports:
-      - 52820:52820/udp #Puerto Wireguard
-      - 52821:52821/tcp #Puerto Gestión usuarios - UI
+      - 51820:51820/udp #Puerto Wireguard
+      - 51821:51821/tcp #Puerto Gestión usuarios - UI
     restart: unless-stopped
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
